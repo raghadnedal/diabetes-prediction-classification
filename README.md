@@ -59,19 +59,20 @@ The project followed these steps:
 6. Replacing unrealistic zero values with missing values
 7. Filling missing values using the median
 8. Correlation analysis
-9. Feature and target split
-10. Train/test split
-11. Feature scaling
-12. Training multiple classification models
-13. Model evaluation
-14. Confusion matrix analysis
-15. ROC-AUC evaluation
-16. Threshold tuning
-17. Cross validation
-18. Hyperparameter tuning using GridSearchCV
-19. Feature importance
-20. Final model selection
-
+9. Feature engineering
+10. Feature and target split
+11. Train/test split
+12. Feature scaling
+13. Training multiple classification models
+14. Training Gradient Boosting Classifier
+15. Model evaluation
+16. Confusion matrix analysis
+17. ROC-AUC evaluation
+18. Threshold tuning
+19. Cross validation
+20. Hyperparameter tuning using GridSearchCV
+21. Feature importance
+22. Final model selection
 ---
 
 ## Data Preprocessing
@@ -101,6 +102,7 @@ The following classification models were trained and compared:
 - Decision Tree
 - Random Forest
 - Support Vector Machine
+- Gradient Boosting Classifier
 - Tuned Random Forest
 
 ---
@@ -136,10 +138,12 @@ This trade-off can be acceptable in medical problems because missing diabetic pa
 
 - Glucose had the highest correlation with diabetes outcome.
 - BMI also showed an important relationship with diabetes.
+- Feature engineering was used to create additional useful predictors.
 - Accuracy alone was not enough to evaluate the model.
 - Recall was very important because false negatives mean missed diabetic patients.
 - Threshold tuning improved the ability of the model to detect diabetic patients.
-- Random Forest and Logistic Regression performed well compared to other models.
+- Gradient Boosting was tested as a stronger model for tabular classification data.
+- Random Forest, Gradient Boosting, and Logistic Regression performed well compared to other models.
 
 ---
 
@@ -173,6 +177,9 @@ From this project, I learned:
 - How to use Cross Validation
 - How to use GridSearchCV
 - How to interpret Feature Importance
+- How to create new features using feature engineering
+- How to train and evaluate Gradient Boosting Classifier
+- How engineered features can affect model performance
 
 ---
 
